@@ -1,0 +1,14 @@
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    min-height: 91px;
+    padding: 0px 98px;
+    background-color: $background-header-footer;
+    // flex-direction: row;
+    // align-items: flex-end;
+    // margin: 25px 98px 36px 61px;
+}
+
+.header__logo {
+    padding: 27px 0 39px;
+}

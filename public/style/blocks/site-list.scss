@@ -1,0 +1,19 @@
+.site-list__item {
+    max-width: 150px;
+    margin-right: 25px;
+
+    &:nth-child(5n) {
+        margin-right: 0;
+    }
+}
+
+.site-list__link {
+    color: $basic-black;
+    font-size: 16px;
+    padding: 40px 0;
+
+    &:focus,
+    &:hover {
+      opacity: 0.7;
+    }
+}

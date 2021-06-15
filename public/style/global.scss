@@ -1,0 +1,18 @@
+a {
+    text-decoration: none;
+}
+  
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: $font-basic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 19px;
+  color: $basic-black;
+}

@@ -1,0 +1,49 @@
+.credit {
+    background-image: url(../img/background-main.jpg);
+    background-size: cover;
+    background-position: 0 0;
+    position: relative;
+    z-index: 2;
+
+    &::after, &::before {
+        // box-sizing: border-box;
+        content: "";
+        position: absolute;
+        width: 289px;
+        height: 182px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &::after {
+        background-image: url(../img/black-card.png);
+        z-index: 99;
+        top: 138px;
+        left: 721px; 
+    }
+    &::before {
+        background-image: url(../img/white-card.png);
+        z-index: 10;
+        top: 80px;
+        left: 830px; 
+    }
+}
+.credit__container {
+    padding-top: 115px;
+    padding-bottom: 114px;
+    padding-left: 268px;
+}
+
+.credit__title {
+    font-size: 54px;
+    line-height: 63px;
+    color: $background-header-footer;
+    margin-bottom: 25px;
+}
+
+.credit__description {
+    color: $light-grey;
+    font-size: 22px;
+    line-height: 26px;
+    display: block;
+    margin-bottom: 40px;
+}

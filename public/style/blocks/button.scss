@@ -1,0 +1,53 @@
+.button {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 16px 36px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    outline: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: center;
+    width: 234px;
+  
+    &:focus,
+    &:hover {
+      opacity: 0.6;
+    }
+  
+    // &_blue {
+    //   @include btn-color($color-text-title-light, $color-bg-btn-blue);
+    // }
+  
+    &__white {
+      background-color: $button-credit-white;
+      color: $basic-black;
+    }
+
+    &--blue {
+        background-color: $blue;
+        // background-color: $button-blue;
+        color: $background-header-footer;
+        width: 198px;
+    }
+
+    &--convertor {
+        width: 382px;
+    }
+  
+    // &_short {
+    //   padding: 15px 35px;
+    //   letter-spacing: -1.5px;
+    // }
+  
+    // &_middle {
+    //   padding: 16px 48px;
+    // }
+}
+  

@@ -31,10 +31,10 @@
                 <a class="site-list__link" href="#">Услуги</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link site-list__link--active" href="#">Рассчитать кредит</a>
+                <a class="site-list__link" href="#">Рассчитать кредит</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="#">Конвертер валют</a>
+                <a class="site-list__link site-list__link--active" href="#">Конвертер валют</a>
               </li>
               <li class="site-list__item">
                 <a class="site-list__link"  href="#">Контакты</a>
@@ -84,8 +84,8 @@
       <section class="currency-converting container">
         <div class="currency-converting__wrapper">
             <h2 class="title currency-converting__title">Конвертер валют</h2>
-            <form class="currency-converting__form form-convertor">
-                <div class="form-convertor__wrapper form-convertor__wrapper-process">
+            <form class="currency-converting__form form-convertor" action="/action_page.php" method="get">
+                <div class="form-convertor__wrapper form-convertor__wrapper--process">
                     <div class="form-convertor__from">
                         <div class="form-convertor__conversion">
                             <label class="form-convertor__label" for="from-convert">У меня есть</label>
@@ -121,7 +121,7 @@
                 </div>
                 <div class="form-convertor__wrapper form-convertor__wrapper--saving">
                     <div>
-                        <label class="form-convertor__label" for="calendar"></label>
+                        <label class="form-convertor__label form-convertor__label--calendar" for="calendar"></label>
                         <input class="form-convertor__input" type="text" id="calendar" placeholder="1.12.2020">  
                     </div>
                     <button class="button button--blue button--convertor">Сохранить результат</button>

@@ -1,7 +1,8 @@
 .credit {
+    background-color: $blue;
     background-image: url(../img/background-main.jpg);
-    background-size: cover;
-    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
     position: relative;
     z-index: 2;
 
@@ -28,8 +29,8 @@
     }
 }
 .credit__container {
-    padding-top: 115px;
-    padding-bottom: 114px;
+    padding-top: 102px;
+    padding-bottom: 116px;
     padding-left: 268px;
 }
 
@@ -37,7 +38,7 @@
     font-size: 54px;
     line-height: 63px;
     color: $background-header-footer;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
 }
 
 .credit__description {
@@ -45,5 +46,5 @@
     font-size: 22px;
     line-height: 26px;
     display: block;
-    margin-bottom: 40px;
+    margin-bottom: 37px;
 }

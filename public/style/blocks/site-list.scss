@@ -13,6 +13,9 @@
     font-size: 16px;
     padding: 35px 0;
 
+    &--active {
+        color: $blue;
+    }
     &:focus,
     &:hover {
       opacity: 0.7;

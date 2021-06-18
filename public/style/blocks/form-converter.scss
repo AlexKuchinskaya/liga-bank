@@ -1,7 +1,27 @@
 .form-convertor__wrapper {
-    margin-top: 85px;
     display: flex;
     justify-content: space-between;
+    // position: relative;
+   
+    &--process {
+        position: relative;
+        &::after {
+            position: absolute;
+            content: "";
+            background-image: url(../img/arrow-left-direction.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 50px;
+            height: 16px;
+            top: 0;
+            right: 50%;
+            transform: translateX(-50%);
+        }
+
+    }
+    &--saving {
+        margin-top: 85px;
+    }
 }
 .form-convertor__from, .form-convertor__to {
     display: flex;
@@ -13,7 +33,7 @@
     border: 1px solid $basic-black;
     box-sizing: border-box;
     border-radius: 4px;
-    padding: 13px 0;
+    padding: 12px 0;
     font-weight: 500;
     font-size: 24px;
     line-height: 34px; 
@@ -28,10 +48,13 @@
 .form-convertor__label {
     display: block; 
     color: $basic-black;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     font-weight: 500;
     font-size: 22px;
     line-height: 31px;
+    &--calendar {
+        margin-bottom: 0;
+    }
 }
 .form-convertor__selection {
     position: relative;
@@ -59,7 +82,7 @@
     -webkit-appearance: none; 
     width: 120px;
     padding: 9px;
-    padding-left: 18px;
+    padding-left: 14px;
     // text-align: center;
     // text-align-last: center;
     // -moz-text-align-last: center;

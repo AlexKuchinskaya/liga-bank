@@ -33,24 +33,36 @@
     font-size: 22px;
     line-height: 31px;
 }
+.form-convertor__selection {
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: "";
+        background-image: url(../img/arrow-select.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 16px;
+        height: 8px;
+        bottom: 26px;
+        right: 17px;
+        z-index: 99;
+        // top: 50%;
+        // transform: translateY(-50%);
+    }
+}
 .form-convertor__select {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 42px;
+    margin-top: 30px;
     -webkit-appearance: none; 
     width: 120px;
-    padding: 9px 0;
+    padding: 9px;
     padding-left: 18px;
     // text-align: center;
     // text-align-last: center;
     // -moz-text-align-last: center;
     // -webkit-text-align-last: center;
     margin-left: 15px;
-    position: relative;
-    &::after {
-        position: absolute;
-        content: "";
-        width: 16px;
-        height: 8px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-image: url(../img/arrow.svg);
-    }
 }

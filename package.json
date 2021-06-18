@@ -30,6 +30,8 @@
     "file-loader": "^6.2.0",
     "sass-loader": "^10.1.1",
     "style-loader": "^2.0.0",
+    "svg-inline-loader": "^0.8.2",
+    "svg-sprite-loader": "^6.0.7",
     "svg-spritemap-webpack-plugin": "^4.0.3",
     "svg-url-loader": "^7.1.1",
     "url-loader": "^4.1.1",

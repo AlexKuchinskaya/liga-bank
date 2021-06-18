@@ -8,9 +8,10 @@
 }
 
 .site-list__link {
+    display: block;
     color: $basic-black;
     font-size: 16px;
-    padding: 40px 0;
+    padding: 35px 0;
 
     &:focus,
     &:hover {

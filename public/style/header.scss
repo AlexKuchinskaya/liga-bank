@@ -2,7 +2,8 @@
     display: flex;
     justify-content: space-between;
     min-height: 91px;
-    padding: 0px 98px;
+    padding-left: 98px;
+    padding-right: 98px;
     background-color: $background-header-footer;
     // flex-direction: row;
     // align-items: flex-end;
@@ -10,5 +11,12 @@
 }
 
 .header__logo {
-    padding: 27px 0 39px;
+    padding: 27px 0 35px;
+    display: inline-block;
+}
+
+.header__nav {
+    width: 615px;
+    margin-left: 62px;
+    margin-right: auto;
 }

@@ -1,15 +1,24 @@
 .user-navigation__login {
     // когда убертся img не забыть класс
-
-    color: $basic-black;
-    padding: 35px 0;
-}
-
-.user-navigation__text, img {
     display: inline-block;
-    vertical-align: middle;
+    color: $basic-black;
+    padding: 35px 0px;
 }
+
+// .user-navigation__text {
+//     display: inline-block;
+//     // vertical-align: bottom;
+
+// }
 
 .user-navigation__text {
-    margin-left: 10px
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 16px;
+    vertical-align: middle;
+
+}
+.user-navigation img {
+    display: inline-block;
+    vertical-align: middle;
 }

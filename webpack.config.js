@@ -1,5 +1,7 @@
+const webpack = require('webpack');
 const path = require('path');
 const SVGSpritemapPlugin = require('svg-spritemap-webpack-plugin');
+const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 
 module.exports = {
     entry: [`./src/index.js`],
@@ -53,11 +55,37 @@ module.exports = {
                   },
                 ],
             },
+            // {
+            //     test: /\.svg$/,
+            //     loader: 'svg-inline-loader'
+            // },
+            // {
+            //     test: /\.svg$/,
+            //     include: path.resolve(__dirname, '/public/img/icons'),
+            //     use: [
+            //       {
+            //         loader: 'svg-sprite-loader',
+            //         options: {
+            //               extract: true,
+            //               spriteFilename: './public/img/icons.svg',
+            //             }
+            //       },
+            //     ],
+            // }
+            {
+              test: /\.svg$/,
+              use: [
+                { loader: 'svg-sprite-loader',  },
+                
+              ]
+            }
+
         ],
     },
     // plugins: [
     //     new SVGSpritemapPlugin()
     // ],
+
     devServer: { 
         contentBase: './public',
         historyApiFallback: {
@@ -65,6 +93,9 @@ module.exports = {
           },
         port: 7700,
         open: true
-    } ,
+    },
+    plugins: [
+      new SpriteLoaderPlugin()
+    ],
     devtool: 'source-map',
 };

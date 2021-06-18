@@ -27,4 +27,13 @@
       url("../fonts/Roboto-bold.woff2") format("woff2"),
       url("../fonts/Roboto-bold.woff") format("woff");
 }
-  
+
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: 
+    url("../fonts/work-sans-v9-latin-700.woff2") format("woff2"),
+    url("../fonts/work-sans-v9-latin-700.woff") format("woff");
+}

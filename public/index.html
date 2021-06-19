@@ -3,25 +3,14 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
     <title>Лига Банк</title>
     <meta name="description" content="Лига банк. Ваша уверенность в завтрашнем дне.">
-    <!-- <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preload" href="fonts/Roboto-regular.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/Roboto-regular.woff" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/Roboto-medium.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/Roboto-medium.woff" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/Roboto-bold.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/Roboto-bold.woff" as="font" crossorigin="anonymous"> -->
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container">
         <div class="header__wrapper">
           <a class="header__logo logo" href="index.html" aria-label="На главную">
-            <!-- <svg width="28" height="25">
-              <use xlink:href="/path/to/spritemap.svg#sprite-phone">></use>
-            </svg> -->
             <img src="img/logo-liga.svg" width="28" height="25" alt="Лого">
             <span class="logo__text">ЛИГА Банк</span>
           </a>
@@ -46,13 +35,10 @@
           </nav>
           <div class="user-navigation">
                 <a class="user-navigation__login" href="#">
-                    <!-- <svg width="20" height="22">
-                    <use xlink:href="#icon-signin">
-                    </use></svg> -->
                     <img src="img/icon-login.svg" width="20" height="22" alt="Вход">
                     <span class="user-navigation__text">Войти в Интернет-банк</span>
                 </a>
-        </div>
+          </div>
         </div>
       </div>
     </header>
@@ -65,21 +51,6 @@
               <span class="credit__description slider__item-desc slider-item__desc">Кредиты на любой случай</span>
               <a class="button button__white" href="#">Рассчитать кредит</a>
         </div>
-          <!-- <div class="slider__item slider-item  slider-item_light slider-item_man swiper-slide">
-            <div class="slider__item-wrapper slider-item__wrapper">
-              <p class="slider__item-title slider-item__title">Лига-Банк</p>
-              <p class="slider__item-desc slider-item__desc">Ваша уверенность в завтрашнем дне</p>
-            </div>
-          </div>
-          <div class="slider__item slider-item  slider-item_light slider-item_girl swiper-slide">
-            <div class="slider__item-wrapper slider-item__wrapper">
-              <p class="slider__item-title slider-item__title">Лига-Банк</p>
-              <p class="slider__item-desc slider-item__desc">Всегда рядом</p>
-              <a class="btn btn_blue btn_middle" href="#map-block">Найти отделение</a>
-            </div>
-          </div>
-        </div>
-        <div class="slider-pagination"></div> -->
       </section>
       <section class="currency-converting container">
         <div class="currency-converting__wrapper">
@@ -122,7 +93,7 @@
                 <div class="form-convertor__wrapper form-convertor__wrapper--saving">
                     <div>
                         <label class="form-convertor__label form-convertor__label--calendar" for="calendar"></label>
-                        <input class="form-convertor__input" type="text" id="calendar" placeholder="1.12.2020">  
+                        <input class="form-convertor__input form-convertor__input--calendar" type="text" id="calendar" placeholder="1.12.2020">  
                     </div>
                     <button class="button button--blue button--convertor">Сохранить результат</button>
                 </div>
@@ -214,17 +185,14 @@
       <div class="container">
         <div class="footer__wrapper">
           <div class="footer__info information-footer">
-            <a class="header__logo logo" href="index.html" aria-label="На главную">
-              <!-- <svg width="150" height="27">
-                <use xlink:href="#icon-logo-full">
-              </use></svg> -->
+            <a class="logo" href="index.html" aria-label="На главную">
                 <img src="img/logo-liga.svg" width="28" height="25" alt="Лого">
                 <span>ЛИГА Банк</span>
             </a>
             <p class="information-footer__text">150015, г. Москва, ул. Московская, д. 32 Генеральная лицензия Банка России №1050 Ⓒ Лига Банк, 2019</p>
           </div>
-          <div>
-            <ul class="list footer__nav nav-footer">
+          <div class="nav-footer">
+            <ul class="list footer__nav nav-footer__list">
               <li class="nav-footer__item">
                 <a class="nav-footer__link" href="#">Услуги</a>
               </li>
@@ -285,7 +253,8 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
+    <div id="root"></div>
     <script src="./bundle.js"></script>
   </body>
 </html>

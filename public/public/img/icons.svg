@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style>
+    .sprite-symbol-usage {display: none;}
+    .sprite-symbol-usage:target {display: inline;}
+  </style><symbol viewBox="0 0 53 18" fill="none" id="arrow-left-direction">
+<path d="M19 1L3 9L19 17" stroke="#1F1E25" stroke-width="2" />
+<path d="M3 9C9.66667 9 33.3241 9 44.6667 9L53 9" stroke="#1F1E25" stroke-width="2" />
+</symbol></defs><use id="arrow-left-direction-usage" xlink:href="#arrow-left-direction" class="sprite-symbol-usage" /></svg>

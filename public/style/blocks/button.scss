@@ -1,7 +1,7 @@
 .button {
     display: inline-block;
     vertical-align: middle;
-    padding: 16px 36px;
+    padding: 16px 0;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
@@ -38,10 +38,11 @@
     }
 
     &--history {
-        margin-top: 53px;
+        margin-top: 47px;
     }
     &--convertor {
         width: 382px;
+        font-size: 18px;
     }
   
     // &_short {

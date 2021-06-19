@@ -22,7 +22,7 @@
     font-weight: 500;
     font-size: 28px;
     line-height: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 51px;
 }
 
 .history__list-container {
@@ -33,18 +33,38 @@
     width: 392px;
 }
 .history__item {
-    margin-bottom: 30px;
+    margin-bottom: 28px;
     &:last-child {
         margin-bottom: 0;
     }
 }
 .history__wrapper {
     display: flex;
+    position: relative;
     span {
         display: block;
     }
+    &::after {
+        content: "";
+            background-image: url(../img/arrow-currency-history.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            width: 53px;
+            height: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 218px;
+    }
+}
+.history__to {
+    width: 91px;
 }
 .history__from {
+    width: 91px;
     margin-left: 40px;
     margin-right: auto;
+}
+.history__to {
+    width: 117px;
 }

@@ -6,7 +6,7 @@ const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 module.exports = {
     entry: [`./src/index.js`],
     output: {
-        path: __dirname + '/public',
+        path: path.resolve(__dirname, 'public'),
         filename: 'bundle.js',
     },
     module: {
@@ -30,6 +30,7 @@ module.exports = {
                     loader: "sass-loader"
                 }]
             },
+            
             {
                 test: /\.(woff|woff2)$/,
                 use: {
@@ -45,19 +46,28 @@ module.exports = {
                 ],
             },
             {
-                test: /\.svg$/,
-                use: [
-                  {
-                    loader: 'svg-url-loader',
-                    options: {
-                      limit: 10000,
-                    },
+              test: /\.svg$/,
+              use: [
+                 { 
+                   loader: 'svg-sprite-loader',
+                   options: {
+                      extract: true,
+                      spriteFilename: './public/img/icons.svg',
+                    }
                   },
-                ],
+                
+              ]
             },
             // {
-            //     test: /\.svg$/,
-            //     loader: 'svg-inline-loader'
+            //     test: /\.(woff|woff2|svg)$/,
+            //     use: [
+            //       {
+            //         loader: 'svg-url-loader',
+            //         options: {
+            //           limit: 10000,
+            //         },
+            //       },
+            //     ],
             // },
             // {
             //     test: /\.svg$/,
@@ -72,13 +82,6 @@ module.exports = {
             //       },
             //     ],
             // }
-            {
-              test: /\.svg$/,
-              use: [
-                { loader: 'svg-sprite-loader',  },
-                
-              ]
-            }
 
         ],
     },
@@ -86,16 +89,25 @@ module.exports = {
     //     new SVGSpritemapPlugin()
     // ],
 
-    devServer: { 
-        contentBase: './public',
-        historyApiFallback: {
-            index: 'index.html'
-          },
-        port: 7700,
-        open: true
-    },
+    // devServer: { 
+    //     contentBase: './public',
+    //     historyApiFallback: {
+    //         index: 'index.html'
+    //       },
+    //     port: 7700,
+    //     open: true
+    // },
+    devServer: {
+      contentBase: path.resolve(__dirname, 'public'),
+      open: true,
+      port: 1337,
+      historyApiFallback: true,
+  },
     plugins: [
       new SpriteLoaderPlugin()
     ],
+    resolve: {
+      extensions: ['.js', '.jsx']
+    },
     devtool: 'source-map',
 };

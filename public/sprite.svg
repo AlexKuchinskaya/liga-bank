@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style>
+    .sprite-symbol-usage {display: none;}
+    .sprite-symbol-usage:target {display: inline;}
+  </style><symbol viewBox="0 0 41 18" fill="none" id="arrow-currency-history">
+<path d="M27.2 17L40 9L27.2 1" stroke="#1F1E25" />
+<path d="M40 9C34.6667 9 15.7407 9 6.66667 9H0" stroke="#1F1E25" />
+</symbol><symbol viewBox="0 0 53 18" fill="none" id="arrow-left-direction">
+<path d="M19 1L3 9L19 17" stroke="#1F1E25" stroke-width="2" />
+<path d="M3 9C9.66667 9 33.3241 9 44.6667 9L53 9" stroke="#1F1E25" stroke-width="2" />
+</symbol><symbol viewBox="0 0 53 18" fill="none" id="arrow-right-direction">
+<path d="M34 17L50 9L34 1" stroke="#1F1E25" stroke-width="2" />
+<path d="M50 9C43.3333 9 19.6759 9 8.33333 9H0" stroke="#1F1E25" stroke-width="2" />
+</symbol></defs><use id="arrow-currency-history-usage" xlink:href="#arrow-currency-history" class="sprite-symbol-usage" /><use id="arrow-left-direction-usage" xlink:href="#arrow-left-direction" class="sprite-symbol-usage" /><use id="arrow-right-direction-usage" xlink:href="#arrow-right-direction" class="sprite-symbol-usage" /></svg>

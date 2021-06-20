@@ -1,0 +1,8 @@
+export default {
+      id: "arrow-currency-history-usage",
+      viewBox: "0 0 41 18",
+      url: __webpack_public_path__ + "/Users/alex/projects/liga-bank/public/img/arrow-currency-history.svg",
+      toString: function () {
+        return this.url;
+      }
+    }

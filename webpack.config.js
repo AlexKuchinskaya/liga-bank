@@ -11,6 +11,19 @@ module.exports = {
     },
     module: {
         rules: [
+          {
+            test: /icon\/.*\.svg$/,
+            use: [
+              { 
+                 loader: 'svg-sprite-loader',
+                 options: {
+                    extract: true,
+                    // spriteFilename: './public/img/icons.svg',
+                  }
+              },
+              
+            ]
+          },
             {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
@@ -38,26 +51,14 @@ module.exports = {
                 },
             },
             {
-                test: /\.(png|jpe?g|gif)$/i,
+                test: /\.(png|jpe?g|gif|svg)$/i,
                 use: [
                   {
                     loader: 'file-loader',
                   },
                 ],
             },
-            {
-              test: /\.svg$/,
-              use: [
-                 { 
-                   loader: 'svg-sprite-loader',
-                   options: {
-                      extract: true,
-                      spriteFilename: './public/img/icons.svg',
-                    }
-                  },
-                
-              ]
-            },
+            
             // {
             //     test: /\.(woff|woff2|svg)$/,
             //     use: [

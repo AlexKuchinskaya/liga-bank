@@ -11,10 +11,34 @@
     padding-left: 29px;
     width: 196px;
     padding-left: 30px;
+    position: relative;
+    &::after {
+        content: "";
+        background-image: url(../img/icon-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 0;
+        left: 0;
+    }
 }
 .contacts-footer__item--phone {
     padding-left: 33px;
     width: 155px;
+    position: relative;
+    &::after {
+        content: "";
+        background-image: url(../img/icon-phone.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 0;
+        left: 0;
+    }
 }
 .contact__footer__link {
     font-weight: 500;

@@ -11,9 +11,11 @@
         content: "";
         position: absolute;
         width: 289px;
-        height: 182px;
+        height: 228px;
         background-repeat: no-repeat;
-        background-position: center;
+        // background-size: 100% auto;
+        background-position: top center;
+        border-radius: 4px;
     }
     &::after {
         background-image: url(../img/black-card.png);

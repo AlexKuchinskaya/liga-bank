@@ -1,7 +1,6 @@
 .form-convertor__wrapper {
     display: flex;
     justify-content: space-between;
-    // position: relative;
    
     &--process {
         position: relative;
@@ -52,6 +51,7 @@
         line-height: 34px; 
         color: $classic-black;   
     }
+    
 }
 .form-convertor__input {
     &--calendar {
@@ -66,9 +66,6 @@
     font-weight: 500;
     font-size: 22px;
     line-height: 31px;
-    &--calendar {
-        margin-bottom: 0;
-    }
 }
 .form-convertor__selection {
     position: relative;
@@ -102,4 +99,18 @@
     // -moz-text-align-last: center;
     // -webkit-text-align-last: center;
     margin-left: 15px;
+}
+.form-convertor__datepicker {
+    position: relative;
+    &::after {
+        content: "";
+        background-image: url(../img/icon-calendar.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        width: 44px;
+        height: 42px;
+        top: 7px;
+        left: 329px;
+    }
 }

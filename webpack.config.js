@@ -11,19 +11,19 @@ module.exports = {
     },
     module: {
         rules: [
-          {
-            test: /icon\/.*\.svg$/,
-            use: [
-              { 
-                 loader: 'svg-sprite-loader',
-                 options: {
-                    extract: true,
-                    // spriteFilename: './public/img/icons.svg',
-                  }
-              },
+          // {
+          //   test: /icon\/.*\.svg$/,
+          //   use: [
+          //     { 
+          //        loader: 'svg-sprite-loader',
+          //        options: {
+          //           extract: true,
+          //           // spriteFilename: './public/img/icons.svg',
+          //         }
+          //     },
               
-            ]
-          },
+          //   ]
+          // },
             {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
@@ -44,14 +44,14 @@ module.exports = {
                 }]
             },
             
+            // {
+            //     test: /\.(woff|woff2)$/,
+            //     use: {
+            //       loader: 'url-loader',
+            //     },
+            // },
             {
-                test: /\.(woff|woff2)$/,
-                use: {
-                  loader: 'url-loader',
-                },
-            },
-            {
-                test: /\.(png|jpe?g|gif|svg)$/i,
+                test: /\.(png|jpe?g|gif)$/i,
                 use: [
                   {
                     loader: 'file-loader',
@@ -59,17 +59,17 @@ module.exports = {
                 ],
             },
             
-            // {
-            //     test: /\.(woff|woff2|svg)$/,
-            //     use: [
-            //       {
-            //         loader: 'svg-url-loader',
-            //         options: {
-            //           limit: 10000,
-            //         },
-            //       },
-            //     ],
-            // },
+            {
+                test: /\.(woff|woff2|svg)$/,
+                use: [
+                  {
+                    loader: 'svg-url-loader',
+                    options: {
+                      limit: 10000,
+                    },
+                  },
+                ],
+            },
             // {
             //     test: /\.svg$/,
             //     include: path.resolve(__dirname, '/public/img/icons'),

@@ -7,26 +7,24 @@
     z-index: 2;
 
     &::after, &::before {
-        // box-sizing: border-box;
         content: "";
         position: absolute;
         width: 289px;
         height: 228px;
         background-repeat: no-repeat;
-        // background-size: 100% auto;
         background-position: top center;
         border-radius: 4px;
     }
     &::after {
         background-image: url(../img/black-card.png);
         z-index: 99;
-        top: 138px;
+        top: 118px;
         left: 721px; 
     }
     &::before {
         background-image: url(../img/white-card.png);
         z-index: 10;
-        top: 80px;
+        top: 63px;
         left: 830px; 
     }
 }

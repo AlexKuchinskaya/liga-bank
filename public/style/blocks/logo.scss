@@ -4,8 +4,7 @@
 }
 .logo img {
     display: inline;
-    // vertical-align: bottom;
-    // margin-right: 9px;
+    
 }
 .logo__text {
     font-family: "Work Sans","Arial",sans-serif;
@@ -14,4 +13,5 @@
     line-height: 23px;
     color: $basic-black;
     vertical-align: bottom;
+    margin-left: 9px;
 }

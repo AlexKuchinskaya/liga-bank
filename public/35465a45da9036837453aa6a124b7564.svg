@@ -1,8 +1,0 @@
-export default {
-      id: "arrow-left-direction-usage",
-      viewBox: "0 0 53 18",
-      url: __webpack_public_path__ + "/Users/alex/projects/liga-bank/public/img/arrow-left-direction.svg",
-      toString: function () {
-        return this.url;
-      }
-    }

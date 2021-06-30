@@ -9,7 +9,7 @@ const Header = ({isLogoLinkInHeader}) => {
   const defaultActiveLink = `Конвертер валют`;
   const [activeLink, setActiveLink] = useState(defaultActiveLink);
   const handleActiveLink = (evt) => {
-    setActiveLink(evt.target.data.link);
+    setActiveLink(evt.target.dataset.link);
   };
   return <>
     <header className="header">
@@ -19,10 +19,8 @@ const Header = ({isLogoLinkInHeader}) => {
           <nav className="header__nav">
             <ul className="list main-nav site-list">
               {allNavSiteLinks.map((siteLink) => {
-                return <li key={siteLink} className="site-list__item" onClick={() => {
-                  handleActiveLink();
-                }}>
-                  <a href="#" className={`site-list__link ${siteLink === activeLink ? `site-list__link--active` : ``}`} data-link={siteLink} >{siteLink}</a>
+                return <li key={siteLink} className="site-list__item">
+                  <a href="#" className={`site-list__link ${siteLink === activeLink ? `site-list__link--active` : ``}`} data-link={siteLink} onClick={handleActiveLink}>{siteLink}</a>
                 </li>;
               })}
             </ul>
